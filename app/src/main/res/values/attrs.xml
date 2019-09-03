@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--android百分比-->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+
+        <attr name="layout_textSizePercent" format="string" />
+
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+    </declare-styleable>
+    <!--android头部标签-->
+    <declare-styleable name="HeadLayout_Layout">
+        <attr name="layout_HeadBackground" format="reference" />
+        <attr name="layout_HeadLeftIcon" format="reference" />
+        <attr name="layout_HeadIcon" format="reference" />
+        <attr name="layout_HeadRightIcon" format="reference" />
+        <attr name="layout_HeadLeftText" format="string" />
+        <attr name="layout_HeadText" format="string" />
+        <attr name="layout_HeadRightText" format="string" />
+    </declare-styleable>
+
+</resources>
