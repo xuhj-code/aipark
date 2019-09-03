@@ -1,5 +1,8 @@
 package com.huangsipu.introduction.view.home;
 
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.huangsipu.introduction.R;
@@ -17,6 +20,7 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding> {
     @Override
     public void initView() {
         mBinding.setVm(homeViewModel);
+        mBinding.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener);
     }
 
     @Override
@@ -37,4 +41,30 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding> {
                 break;
         }
     }
+
+    public BottomNavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener = item -> {
+        int i = item.getItemId();
+        if (i == R.id.navigation_recommend) {
+            // TODO: 2019-09-03 添加页面切换代码
+            showToast(getString(R.string.title_recommend));
+            return true;
+        } else if (i == R.id.navigation_introduce) {
+            // TODO: 2019-09-03 添加页面切换代码
+            showToast(getString(R.string.title_introduce));
+            return true;
+        } else if (i == R.id.navigation_play) {
+            // TODO: 2019-09-03 添加页面切换代码
+            showToast(getString(R.string.title_play));
+            return true;
+        } else if (i == R.id.navigation_find) {
+            // TODO: 2019-09-03 添加页面切换代码
+            showToast(getString(R.string.title_find));
+            return true;
+        } else if (i == R.id.navigation_service) {
+            // TODO: 2019-09-03 添加页面切换代码
+            showToast(getString(R.string.title_service));
+            return true;
+        }
+        return false;
+    };
 }

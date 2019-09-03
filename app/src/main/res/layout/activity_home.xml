@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
 
     <data>
 
@@ -9,7 +11,12 @@
 
         <variable
             name="presenter"
-            type="com.huangsipu.introduction.view.base.Presenter"/>
+            type="com.huangsipu.introduction.view.base.Presenter" />
+
+        <variable
+            name="onNavigationItemSelectedListener"
+            type="android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener" />
+
     </data>
 
     <RelativeLayout
@@ -23,6 +30,16 @@
             android:layout_centerInParent="true"
             android:onClick="@{(v)->presenter.onClick(v)}"
             android:text="btn" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/home_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemBackground="@null"
+            app:menu="@menu/menu_navigation_guide"
+            bind:onNavigationItemSelectedListener="@{onNavigationItemSelectedListener}" />
 
     </RelativeLayout>
 

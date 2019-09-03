@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recommend"
+        android:enabled="true"
+        android:icon="@drawable/ic_head_default"
+        android:title="@string/title_recommend" />
+
+    <item
+        android:id="@+id/navigation_introduce"
+        android:icon="@drawable/ic_head_default"
+        android:title="@string/title_introduce" />
+
+    <item
+        android:id="@+id/navigation_play"
+        android:icon="@drawable/ic_head_default"
+        android:title="@string/title_play" />
+
+    <item
+        android:id="@+id/navigation_service"
+        android:icon="@drawable/ic_head_default"
+        android:title="@string/title_service" />
+
+    <item
+        android:id="@+id/navigation_find"
+        android:icon="@drawable/ic_head_default"
+        android:title="@string/title_find" />
+</menu>
