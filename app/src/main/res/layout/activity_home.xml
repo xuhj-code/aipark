@@ -5,14 +5,24 @@
 
         <variable
             name="vm"
-            type="com.example.park.view.home.viewmodel.HomeViewModel" />
+            type="com.huangsipu.introduction.view.home.viewmodel.HomeViewModel" />
 
+        <variable
+            name="presenter"
+            type="com.huangsipu.introduction.view.base.Presenter"/>
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="@{(v)->presenter.onClick(v)}"
+            android:text="btn" />
 
     </RelativeLayout>
 
